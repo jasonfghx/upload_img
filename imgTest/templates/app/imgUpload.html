@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>自定義上傳檔案</title>
+</head>
+<body>
+{# method=post 新增屬性 enctype="multipart/form-data" #}
+<form method="post" action="/savefile/" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="file" name="file" /> <br>
+<input type="submit" value="上傳">
+
+</form>
+
+</body>
+</html>

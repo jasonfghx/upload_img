@@ -1,0 +1,14 @@
+<h1>图像结果</h1>
+<br/>
+
+<p>上传的图片是: {{ picture.photo.name }}</p>
+<br/>
+
+<img src="{{ picture.photo.url }}", height="200", width="300" />
+<br>
+
+<br>
+
+
+<a href="{% url 'index' %}">再来一次?</a>
+

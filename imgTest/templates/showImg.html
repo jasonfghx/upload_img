@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>展示圖片</title>
+</head>
+<body>
+    {% for item in imgs %}
+        <img src="{{ item.img_url.url }}";border=0; style="width: 50%;height:30%;margin-right: 100px";><br/>
+        <br/>
+    {% endfor %}
+    <img src="/img/123.jpg";border=0; style="width: 50%;height:30%;margin-right: 100px";>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="img">
+        <input type="submit" value="Upload">
+    </form>
+    <a href="/showImg">圖頁面</a><br>
+</body>
+</html>

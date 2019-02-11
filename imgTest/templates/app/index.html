@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+{% for img in imgs %}
+	<!-- <img src="{{instance.image.url}}"> -->
+	<img src="{{img.photo_original.url}}" class="img-responsive" style="width: 10%; float: left; margin-right: 10px;">
+	<!-- <img src="{{MEDIA_URL}}{{img.photo_original}}" class=" -->
+	<!-- <img src="{{MEDIA_URL}}{{img.photo_small}}"> -->
+{% endfor %}
+</body>
+
+
+
+
+
+
+</body>
+</html>
